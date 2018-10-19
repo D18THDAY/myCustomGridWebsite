@@ -57,9 +57,10 @@ h1{
 
 .footer{
     background-color: bisque;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
+    color: blue;
 }
 
 .footer p{
@@ -83,6 +84,7 @@ body{
     background-color: floralwhite;
     line-height: 1;
     margin: 0;
+    font-family: cursive;
 }
 
 .right{
