@@ -1,3 +1,6 @@
+/*#################Navigation Bar section######################*/
+
+
 nav, header, footer{
     display: block;
 }
@@ -7,6 +10,7 @@ nav {
     margin: 0;
 }
 
+
 nav ul{
     background-color: bisque;
     overflow: hidden;
@@ -14,10 +18,15 @@ nav ul{
     padding: 0;
 }
 
-ul.topNavLeft li{
-    float: left;
+nav ul.topNavLeft li{
+    float:left;
     list-style: none;
+}
+
+nav ul.topNavLeft li a{
     padding: 10px;
+    text-align: center;
+    display:block;
 }
 
 nav ul li a{
@@ -27,9 +36,11 @@ nav ul li a{
 }
 
 nav ul li a:hover{
+    background-color: brown;
     color: gray;
 }
 
+/*##########Navigation Bar section ends#################*/
 
 .center{
     text-align:center;
@@ -46,8 +57,14 @@ h1{
 
 .footer{
     background-color: bisque;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
+.footer p{
+    font-family: 'Charmonman', 'cursive';
+}
 
 .style{
     font-family: 'Charmonman', cursive;
@@ -64,6 +81,7 @@ img{
 
 body{
     background-color: floralwhite;
+    line-height: 1;
     margin: 0;
 }
 
@@ -108,3 +126,21 @@ body{
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
+nav ul li.dropDownToggle {
+    display: none;
+}
+
+
+/*##########################################*/
+
+@media screen and (max-width:680px){
+    ul.topNavLeft li:not(:nth-child(1)){
+        display:none;
+    }
+    
+    ul.topNavLeft li.dropDownToggle{
+        display: block;
+        float: right;
+    }
+}
