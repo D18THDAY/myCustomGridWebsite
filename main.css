@@ -5,6 +5,7 @@ nav, header, footer{
     display: block;
 }
 
+
 nav {
     width: 100%;
     margin: 0;
@@ -12,7 +13,7 @@ nav {
 
 
 nav ul{
-    background-color: bisque;
+    background-color: floralwhite;
     overflow: hidden;
     margin: 0;
     padding: 0;
@@ -50,9 +51,35 @@ h1{
     color: crimson;
 }
 
+.preheader{
+    height: 400px;
+    width: 600px;
+    background-color: bisque;
+    overflow: hidden;
+    padding: 40px;
+}
+
 .header{
     margin: 0;
     padding: 0;
+}
+
+.headerImage{
+    height: 300px;
+    width: 300px;
+}
+
+.headerImageContainer{
+    padding: 4px;
+}
+
+button{
+    font-style: oblique;
+    font-family: cursive;
+    background-color: blue;
+    padding: 8px;
+    color: white;
+    border-radius: 10%;
 }
 
 .footer{
@@ -60,21 +87,16 @@ h1{
     position: relative;
     bottom: 0;
     width: 100%;
-    color: blue;
 }
 
 .footer p{
     font-family: 'Charmonman', 'cursive';
 }
 
-.style{
-    font-family: 'Charmonman', cursive;
-    font-weight: 400;
-}
 
 img{
-    height: 150px;
-    width: 200px;
+    height: 100px;
+    width: 150px;
     display: block;
     margin: auto;
 }
@@ -107,6 +129,7 @@ body{
 .row {
   display: flex;
     width: 100%;
+    justify-content: center;
 }
 
 
@@ -141,8 +164,17 @@ nav ul li.dropDownToggle {
         display:none;
     }
     
+    .row{
+        flex-flow: wrap;
+    }
+    
     ul.topNavLeft li.dropDownToggle{
         display: block;
         float: right;
+    }
+    
+    .headerImage{
+        height: 80px;
+        width: 80px;
     }
 }
