@@ -16,7 +16,7 @@
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Subscribe</a></li>
                 <li class="dropDownToggle">
-			<a href="javascript:void(0)" onClick="dropDownMenu()">&#9776;</a>
+			<a href="javascript:void(0);" onClick="dropDownMenu()">&#9776;</a>
 		</li>
             </ul>
         </nav>
@@ -122,7 +122,7 @@
             function dropDownMenu(){
                 var x = document.getElementById("topNav");
                 if (x.className === "topNavLeft"){
-                    x.className+=" Responsive";
+                    x.className +=" Responsive";
                 }else{
                     x.className = "topNavLeft";
                 }
