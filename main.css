@@ -41,6 +41,10 @@ nav ul li a:hover{
     color: gray;
 }
 
+nav ul li.dropDownToggle {
+    display: none;
+}
+
 /*##########Navigation Bar section ends#################*/
 
 .center{
@@ -91,8 +95,7 @@ button{
 
 .footer{
     background-color: bisque;
-    position: relative;
-    bottom: 0;
+    position: absolute;
     width: 100%;
 }
 
@@ -159,9 +162,6 @@ body{
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-nav ul li.dropDownToggle {
-    display: none;
-}
 
 
 /*##########################################*/
@@ -183,5 +183,26 @@ nav ul li.dropDownToggle {
     .headerImage{
         height: 80px;
         width: 80px;
+    }
+    
+    ul.topNavLeft.Responsive{
+        position: relative;
+    }
+    
+    ul.topNavLeft.Responsive li.dropDownToggle{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    
+    ul.topNavLeft.Responsive li a{
+        display: block;
+        text-align: left;
+    }
+    
+    ul.topNavLeft.Responsive li{
+        display:inline;
+        float: none;
     }
 }
